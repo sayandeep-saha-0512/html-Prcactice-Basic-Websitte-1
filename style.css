@@ -1,0 +1,153 @@
+/* Base Resets & Font styling to look clean like the wireframe */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif; /* Mimics the sketched look */
+}
+
+body {
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* NAVBAR LAYOUT */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.square-icon {
+  width: 25px;
+  height: 25px;
+  background-color: #000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* HERO LAYOUT */
+.hero {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #777;
+}
+
+/* 3-COLUMN DASHBOARD GRID */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.5fr; /* 3 unequal columns matching your wireframe */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.grid-col {
+  padding: 20px;
+}
+
+/* Vertical borders separating the columns */
+.grid-col:not(:last-child) {
+  border-right: 2px solid #000;
+}
+
+/* Column 1 Adjustments */
+.projects-list h2 {
+  margin-bottom: 15px;
+}
+.projects-list ul {
+  list-style: none;
+}
+.projects-list li {
+  padding: 12px 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Column 2 Adjustments */
+.work-exp {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+}
+.profile-link {
+  color: #0066cc;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Column 3 Adjustments */
+.courses-list {
+  list-style: none;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* REVIEWS SECTION */
+.reviews-section {
+  padding: 40px 0;
+}
+
+.reviews-section h2 {
+  margin-bottom: 20px;
+}
+
+.reviews-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.review-card {
+  flex: 1;
+  border: 2px solid #000;
+  border-radius: 25px; /* Rounded card layout */
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+}
+
+.author {
+  margin-top: 15px;
+}
+.author h4 {
+  color: #888;
+}
+.author small {
+  color: #bbb;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 1.1rem;
+}
